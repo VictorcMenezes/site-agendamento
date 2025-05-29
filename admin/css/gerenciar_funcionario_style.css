@@ -1,0 +1,129 @@
+/* Reset básico para garantir consistência */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Container principal */
+body {
+  display: flex;
+  /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container centralizado */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* ou center se quiser centralizar verticalmente */
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estiliza o nav */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+p {
+  margin-bottom: 15px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Formulários */
+.cadastro form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Responsividade (foco em mobile) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  nav button, button {
+    width: 100%;
+  }
+}
+  /* alinha horizontalmente */
+  align-items: center;      /* alinha verticalmente */
+  min-height: 100vh;        /* ocupa altura total da tela */
+  background-color: #f9f9f9;  /* cor de fundo opcional */
+  padding: 20px;            /* espaçamento para não colar nas bordas */
+}
+
+/* Conteúdo centralizado */
+.container {
+  width: 100%;
+  max-width: 500px;         /* limita o tamanho no desktop */
+  background-color: white;  /* cor de fundo do conteúdo */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

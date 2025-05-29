@@ -1,0 +1,274 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+h2 {
+   margin-bottom: 20px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.seta {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #8e44ad;
+  padding: 0 10px;
+  transition: transform 0.2s;
+}
+
+.seta:hover {
+  transform: scale(1.2);
+  color: #732d91;
+}
+
+.calendario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.dia-form {
+  display: flex;
+  justify-content: center;
+}
+
+.dia-botao {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.dia-botao strong {
+  font-size: 0.8rem;
+}
+
+.dia-botao small {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.dia-botao.disponivel {
+  background-color: #8e44ad;
+  color: white;
+}
+
+.dia-botao.disponivel:hover {
+  background-color: #732d91;
+  transform: scale(1.05);
+}
+
+.dia-botao.fechado {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Container principal */
+.agendamento-container, .container {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #D6A2E8;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Navegação */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Botões */
+button, .btn {
+  background-color: #8E44AD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+  background-color: #6C3483;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Formulários */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  max-width: 400px;
+}
+
+.formulario .btn {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 10px 20px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.mensagem-sucesso {
+  background-color: #D4EDDA;
+  color: #155724;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Lista de agendamentos */
+.lista-agendamentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.lista-agendamentos li {
+  margin-bottom: 15px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.agendamento-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.agendamento-item p {
+  margin: 4px 0;
+}
+
+.agendamento-item.card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn-danger {
+  background-color: #C0392B;
+}
+
+.btn-danger:hover {
+  background-color: #922B21;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  button, .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start; /* evita esmagar o conteúdo no centro */
+    padding-top: 20px;
+  }
+
+  .formulario,
+  .agendamento-item.card,
+  .agendamento-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .formulario .btn {
+    align-self: center;
+  }
+}

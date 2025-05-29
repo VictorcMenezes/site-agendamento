@@ -1,0 +1,60 @@
+                                            ---concluido---criar cadastro de usuario
+verificar depois 
+nao esta verificando os 11 digitos do telefone
+------------------------------------------------------------------------------------------------------------------------------------------
+                                                ---concluido---criar login
+------------------------------------------------------------------------------------------------------------------------------------------
+
+                                        ------------area de administrador-----------
+
+                                        ---concluido---criar cadastro de serviços
+verificar depois 
+nao esta verificando se colocar valor 0 no valor do serviço
+verificar porque quando salva o novo servio vai para outra pagina
+colocar para todos os serviços ficarem em mausculo
+------------------------------------------------------------------------------------------------------------------------------------------
+                                ---concluido---criar editar e deletar serviços
+
+------------------------------------------------------------------------------------------------------------------------------------------
+                                ---concluido---criar cadastro horarios de funcionamento
+verificar depois as mensagens de confirmação, edicao e fechamento nao esta aparecendo
+colocar uma mensagem de de pergunta se que realmente fechar naquele dia
+colocar verificador se for fechar o dia se tem algum agendamento aberto e mandar um mensagem na tela com o agendamento e contatos dos clientes
+e a corfimação se deseja realmente fechar naquele dia especifico!
+colocar um filtro de pesquisa para selecionar o funcionario para fechar ou alterar dia horario especifico
+------------------------------------------------------------------------------------------------------------------------------------------
+                                ---concluido---criar cadastro de funcionarios
+colocar para todos os funções ficarem em mausculo
+se a função do trabalhador for admin colocar o nivel dele tambem em admin
+se selecionar um funcionarior ja com funcao informa a funcao se se deseja alterar ou excluir funcionario
+------------------------------------------------------------------------------------------------------------------------------------------
+criar pagina para visualizar estatisticas
+------------------------------------------------------------------------------------------------------------------------------------------
+criar pagamento funcionarios
+------------------------------------------------------------------------------------------------------------------------------------------
+                                ------------area de administrador-----------
+                                
+------------------------------------------------------------------------------------------------------------------------------------------
+agendar serviços
+------------------------------------------------------------------------------------------------------------------------------------------
+visualizar agendamentos serviços
+------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- ✅ Como evitar esses erros no futuro:
+📌 Checklist para qualquer página PHP:
+✅ Sempre inicie com session_start();
+
+✅Verifique permissões com isset($_SESSION['usuario_id']) e $_SESSION['nivel'] === 'admin'
+
+Confirme que os name dos inputs batem com os $_POST
+
+Valide os dados antes de salvar no banco
+
+ Use exit(); após redirecionamentos com header()
+
+Teste com print_r($_SESSION); ou var_dump() para ver dados em tempo real
+
+ Padronize nomes de arquivos (cadastrar, não cadastar)
+
+Sempre exiba mensagens de erro/sucesso ao final da página -->
+

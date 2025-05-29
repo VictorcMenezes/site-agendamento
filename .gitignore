@@ -1,0 +1,6 @@
+banco/banco.db
+*.log
+*.zip
+node_modules/
+vendor/
+.env

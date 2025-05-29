@@ -1,0 +1,320 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e HTML */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Corpo com scroll e sem forçar flex */
+body {
+  display: block;
+  padding: 20px; /* Garante espaçamento no topo */
+}
+
+/* Container centralizado */
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Nav e botão */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Títulos e mensagens */
+h1, h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+p {
+  margin-bottom: 15px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, button {
+   padding: 6px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.linha-dia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.linha-dia label {
+  width: 100px; /* ou 120px se quiser mais espaço */
+  display: inline-block;
+}
+
+.linha-dia input[type="time"] {
+  width: 120px;
+}
+
+.linha-dia button {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.linha-dia span {
+  font-weight: bold;
+  width: 85px;
+}
+
+
+button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.horario-dia {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.horario-dia label {
+  width: 70px;
+  font-weight: bold;
+}
+
+.horario-dia input[type="time"] {
+  width: 100px;
+  padding: 4px;
+}
+
+.horario-dia button {
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.horario-dia .fechar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.horario-dia .fechar:hover {
+  background-color: #c0392b;
+}/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e HTML */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Corpo com scroll e sem forçar flex */
+body {
+  display: block;
+  padding: 20px; /* Garante espaçamento no topo */
+}
+
+
+/* Nav e botão */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Títulos e mensagens */
+h1, h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+p {
+  margin-bottom: 15px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Formulários */
+form {
+  display: contents; /* herda o layout do pai .linha-dia */
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 6px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.linha-dia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap; /* Impede quebra de linha */
+}
+
+.linha-dia label {
+  width: 80px;
+  font-weight: bold;
+}
+
+.linha-dia input[type="time"] {
+  width: 100px;
+}
+
+.linha-dia button {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+button.fechar{
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.fechar:hover {
+  background-color: #da3320;
+}
+
+button:hover {
+  background-color: #218838;
+}
+/* spacing */
+
+table {
+ 
+  border: 3px solid  #007bff;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  nav button, button {
+    width: 100%;
+  }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  nav button, button {
+    width: 100%;
+  }
+}
