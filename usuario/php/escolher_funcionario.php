@@ -39,6 +39,11 @@ $funcionarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/escolher_funcionario_style.css">
     <div class="container">
+         <nav>
+        <a href="../../index.php">
+            <button>VOLTAR</button>
+        </a>
+    </nav>
 <h2>Profissional disponíveis para: <?= htmlspecialchars($servico['nome']) ?></h2>
 
 

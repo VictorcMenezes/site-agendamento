@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    background-color: #D6A2E8;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a button {
+    margin-left: 10px;
+    background-color: #8E44AD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-bar a button:hover {
+    background-color:#6C3483;
+}
+
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="number"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #8E44AD;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6C3483;
+}
+
+.erro {
+    background-color: #ffdddd;
+    color: #a94442;
+    border-left: 5px solid #f44336;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cadastro-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cadastro-link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.cadastro-link a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    margin-top: 40px;
+}

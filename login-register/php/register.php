@@ -62,33 +62,42 @@ try{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Cadastrar</title>
+
 </head>
-    <header>
-        <nav>
+<body>
+    <main class="main-wrapper">
+        <nav class="nav-bar">
         <a href="../../index.php">
             <button>Home</button>
         </a>
         </nav>
-    </header>  
+        <header>
+            <h1>Cadastrar</h1>
+        </header>
 
-<body>
     <div class="container">
-    <h1>Cadastrar</h1>
         <?php if (!empty($mensagem)): ?>
             <p style="color: green;"><?php echo $mensagem; ?></p>
         <?php endif; ?>
-    <form action="register.php" method="post">
-        <div class="form-group">
-            <input type="text" name="nome" id="nome" placeholder="Nome" required value="<?= isset($nome) ? htmlspecialchars($nome) : '' ?>">
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"required value="<?= isset($sobrenome) ? htmlspecialchars($sobrenome) : '' ?>">
-            <input type="email" name="email" id="email" placeholder="Email"required value="<?= isset($email) ? htmlspecialchars($email) : '' ?>">
-            <input type="number" name="contato" id="contato" placeholder="Contato"required value="<?= isset($contato) ? htmlspecialchars($contato) : '' ?>">
-            <input type="password" name="senha" id="senha" placeholder="Senha"required>
-            <input type="password" name="confirma-senha" id="confirmaSenha" placeholder="Confirmar Senha"required>
-            <small id="mensagemSenha"></small>
-            <button type="submit">Cadastrar</button>
+
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required value="<?= isset($nome) ? htmlspecialchars($nome) : '' ?>">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"required value="<?= isset($sobrenome) ? htmlspecialchars($sobrenome) : '' ?>">
+                <input type="email" name="email" id="email" placeholder="Email"required value="<?= isset($email) ? htmlspecialchars($email) : '' ?>">
+                <input type="number" name="contato" id="contato" placeholder="Contato"required value="<?= isset($contato) ? htmlspecialchars($contato) : '' ?>">
+                <input type="password" name="senha" id="senha" placeholder="Senha"required>
+                <input type="password" name="confirma-senha" id="confirmaSenha" placeholder="Confirmar Senha"required>
+                <small id="mensagemSenha"></small>
+                <button type="submit">Cadastrar</button>
+        </form>
     </div>
+    <footer class="footer">
+            <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+        </footer>
+    </main>
     <script src="register.js"></script>
 </body>
 </html>

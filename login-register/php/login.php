@@ -5,7 +5,11 @@ $pdo = new PDO("sqlite:../../banco/banco.db");
 
 // Verifica se o usuário está logado
 if (isset($_SESSION['usuario_id'])) {
-    header('Location: ../../index.php');
+    if ($_SESSION['nivel'] === 'admin') {
+        header('Location: ../../admin/admin.php');
+    } else {
+        header('Location: ../../index.php');
+    }
     exit();
 }
 // Verifica se o formulário foi enviado
@@ -28,7 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['nome'] = $user['nome'];
             $_SESSION['nivel'] = $user['nivel'];
             
-            header('Location: ../../index.php');
+            if ($_SESSION['nivel'] === 'admin') {
+                header('Location: ../../admin/admin.php');
+            } else {
+                header('Location: ../../index.php');
+            }
             exit();
         } else {
              echo "⚠️ Usuário ou senha incorretos!";
@@ -44,35 +52,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Cadastar</title>
+    <title>Login | Acesso ao Sistema</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
-    <header>
-        <nav>
-        <?php if (isset($_SESSION['usuario_id'])): ?>
-    <a href="../php/logout.php" onclick="return confirm('Tem certeza que deseja sair?');">
-    <button>sair</button>
-</a>
-<?php endif; ?>
-        <a href="../../index.php">
-            <button>Home</button>
-        </a>
-        </nav>
-    </header>  
-    <div class="container">
-        <h1>Login/Acessar Conta</h1>
-        <form action="login.php" method="POST">
-            <div class="form-group">
-                <input type="text" name="usuario" id="usuario" placeholder="Email ou DDD+Telefone" required value="<?= isset($usuario) ? htmlspecialchars($usuario) : '' ?>">
-                <input type="password" name="senha" id="senha" placeholder="Senha" required>
-                <input type="submit" value="Entrar">
-                <a href="register.php">
-                    <p>Ainda nao tem, cadastro? Clique aqui!</p>
-                </a>
-            </div>
-        </form>
-    </div>
-
 <body>
-    
+    <main class="main-wrapper">
+        <nav class="nav-bar">
+            <a href="../../index.php"><button>Home</button></a>
+        </nav>
+
+        <header>
+            <h1>Bem-vindo! Faça seu login</h1>
+        </header>
+
+        <div class="container">
+            <?php if (!empty($erro)): ?>
+                <div class="erro"><?= htmlspecialchars($erro) ?></div>
+            <?php endif; ?>
+
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="usuario" id="usuario" placeholder="Email ou DDD+Telefone" required value="<?= htmlspecialchars($usuario ?? '') ?>">
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+
+            <div class="cadastro-link">
+                <a href="register.php">Não tem cadastro? <strong>Crie uma conta</strong></a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <footer class="footer">
+            <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+        </footer>
+    </main>
 </body>
 </html>

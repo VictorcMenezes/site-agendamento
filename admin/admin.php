@@ -3,12 +3,12 @@
     //verifica se o usario está logado é admin
     if(!isset($_SESSION['usuario_id']) || $_SESSION['nivel'] !== 'admin'){
         // Redireciona para a página inicial (ou página de login)
-        header('Location: ../../index.php');
+        header('Location: ../login-register/php/login.php');
         exit();
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,18 @@
 </head>
 <body>
     <nav>
+        <?php if(isset($_SESSION['nome'])): ?>
+
+        <p>Olá, <?php echo $_SESSION['nome']; ?></p>
+
+        <a href="../login-register/php/logout.php" onclick="return confirm('Tem certeza que deseja sair?');">
+            <button class="btn"><i class="fas fa-sign-out-alt"></i> Sair</button>
+        </a>
+        <?php else: ?>
+            <a href="../login-register/php/login.php">
+            <button class="btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+        </a>
+        <?php endif; ?>
         <a href="../admin/php/gerenciar_servico.php">
             <button>Gerenciamento Serviços</button>
         </a>
