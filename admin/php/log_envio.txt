@@ -1,0 +1,12 @@
+2025-06-05 19:20:03 | Enviado para 5581989094854 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":5}
+2025-06-05 21:39:33 | Enviado para 5581989094854 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":6}
+2025-06-05 22:51:19 | Enviado para 5581989094854 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":7}
+2025-06-05 22:57:16 | Número inválido: 81985420223
+2025-06-05 22:57:16 | Número inválido: 
+2025-06-07 17:52:22 | Número inválido: 81985420223
+2025-06-07 17:52:22 | Número inválido: 
+2025-06-07 17:52:23 | Número inválido: 81985420223
+2025-06-07 17:52:23 | Número inválido: 
+2025-06-07 17:52:54 | Número inválido: 81985420223
+2025-06-07 17:53:47 | Enviado para 5581985420223 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":9} | Erro: 
+2025-06-07 17:54:21 | Enviado para 5581985420223 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":10} | Erro: 

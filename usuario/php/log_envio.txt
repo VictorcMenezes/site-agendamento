@@ -1,0 +1,46 @@
+2025-06-07 18:17:18 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = +5581989094854
+2025-06-07 18:17:20 | Enviado para 5581989094854 | Mensagem: Olá Usuario, seu agendamento para corte foi confirmado para o dia 2025-06-18 às 10:40. | Resposta: {"sent":"true","message":"ok","id":11} | Erro: 
+2025-06-07 18:17:21 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou corte com você em 2025-06-18 às 10:40. | Resposta: {"sent":"true","message":"ok","id":12} | Erro: 
+2025-06-07 18:17:22 | Enviado para 5581989094854 | Mensagem: Novo agendamento: Usuario com renata para corte em 2025-06-18 às 10:40. | Resposta: {"sent":"true","message":"ok","id":13} | Erro: 
+2025-06-07 18:34:04 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = +5581989094854
+2025-06-07 18:34:06 | Enviado para 5581989094854 | Mensagem: Olá Usuario, seu agendamento para progressiva foi confirmado para o dia 2025-06-21 às 13:00. | Resposta: {"sent":"true","message":"ok","id":14} | Erro: 
+2025-06-07 18:34:07 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou progressiva com você em 2025-06-21 às 13:00. | Resposta: {"sent":"true","message":"ok","id":15} | Erro: 
+2025-06-07 18:34:09 | Enviado para 5581989094854 | Mensagem: Novo agendamento: Usuario com renata para progressiva em 2025-06-21 às 13:00. | Resposta: {"sent":"true","message":"ok","id":16} | Erro: 
+2025-06-07 18:36:22 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 18:36:23 | Enviado para 5581989094854 | Mensagem: Olá Usuario, seu agendamento para lavagem foi confirmado para o dia 2025-06-14 às 09:00. | Resposta: {"sent":"true","message":"ok","id":17} | Erro: 
+2025-06-07 18:36:24 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou lavagem com você em 2025-06-14 às 09:00. | Resposta: {"sent":"true","message":"ok","id":18} | Erro: 
+2025-06-07 18:36:24 | Número inválido: 
+2025-06-07 18:39:50 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 18:39:52 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? n\seu agendamento para botox foi confirmado para o dia 2025-06-07 às 12:00. | Resposta: {"sent":"true","message":"ok","id":19} | Erro: 
+2025-06-07 18:39:53 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou botox com você em 2025-06-07 às 12:00. | Resposta: {"sent":"true","message":"ok","id":20} | Erro: 
+2025-06-07 18:39:53 | Número inválido: 
+2025-06-07 18:48:26 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 18:48:28 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para lavagem foi confirmado para o dia 2025-06-07 às 11:05. | Resposta: {"sent":"true","message":"ok","id":21} | Erro: 
+2025-06-07 18:48:29 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou lavagem com você em 2025-06-07 às 11:05. | Resposta: {"sent":"true","message":"ok","id":22} | Erro: 
+2025-06-07 18:48:29 | Número inválido: 
+2025-06-07 18:55:48 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 18:55:49 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova foi confirmado para o dia 2025-06-06 às 11:30. | Resposta: {"sent":"true","message":"ok","id":23} | Erro: 
+2025-06-07 18:55:51 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou escova com você em 2025-06-06 às 11:30. | Resposta: {"sent":"true","message":"ok","id":24} | Erro: 
+2025-06-07 18:55:51 | Número inválido: 
+2025-06-07 19:14:47 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 19:14:49 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte foi confirmado para o dia 2025-06-10 às 12:00. | Resposta: {"sent":"true","message":"ok","id":25} | Erro: 
+2025-06-07 19:14:50 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou corte com você em 2025-06-10 às 12:00. | Resposta: {"sent":"true","message":"ok","id":26} | Erro: 
+2025-06-07 19:14:50 | Número inválido: 
+2025-06-07 19:14:50 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 19:14:52 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte foi confirmado para o dia 2025-06-10 às 13:20. | Resposta: {"sent":"true","message":"ok","id":27} | Erro: 
+2025-06-07 19:14:54 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou corte com você em 2025-06-10 às 13:20. | Resposta: {"sent":"true","message":"ok","id":28} | Erro: 
+2025-06-07 19:14:54 | Número inválido: 
+2025-06-07 19:20:21 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-07 19:20:23 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte foi confirmado para o dia 12/06/2025  às 10:40. | Resposta: {"sent":"true","message":"ok","id":29} | Erro: 
+2025-06-07 19:20:24 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou corte com você em 12/06/2025  às 10:40. | Resposta: {"sent":"true","message":"ok","id":30} | Erro: 
+2025-06-07 19:20:24 | Número inválido: 
+2025-06-09 13:43:20 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 13:43:22 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para progressiva foi confirmado para o dia 17/06/2025  às 12:00. | Resposta: {"sent":"true","message":"ok","id":31} | Erro: 
+2025-06-09 13:43:23 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou progressiva com você em 17/06/2025  às 12:00. | Resposta: {"sent":"true","message":"ok","id":32} | Erro: 
+2025-06-09 13:43:23 | Número inválido: 
