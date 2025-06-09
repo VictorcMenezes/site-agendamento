@@ -44,3 +44,178 @@ Seu agendamento para corte foi confirmado para o dia 12/06/2025  às 10:40. | Re
 Seu agendamento para progressiva foi confirmado para o dia 17/06/2025  às 12:00. | Resposta: {"sent":"true","message":"ok","id":31} | Erro: 
 2025-06-09 13:43:23 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento: Usuario marcou progressiva com você em 17/06/2025  às 12:00. | Resposta: {"sent":"true","message":"ok","id":32} | Erro: 
 2025-06-09 13:43:23 | Número inválido: 
+2025-06-09 14:38:28 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 14:38:30 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova foi confirmado para o dia 10/06/2025  às 13:00. | Resposta: {"sent":"true","message":"ok","id":33} | Erro: 
+2025-06-09 14:38:31 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: escova
+Dia: 10/06/2025 às 13:00
+
+Confirmar: http://localhost/site-agendamento/admin/php/responder_agendamento.php?id=38&acao=confirmado
+Recusar: http://localhost/site-agendamento/admin/php/responder_agendamento.php?id=38&acao=recusado | Resposta: {"sent":"true","message":"ok","id":34} | Erro: 
+2025-06-09 14:38:31 | Número inválido: 
+2025-06-09 16:22:30 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 16:22:31 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova foi confirmado para o dia 17/06/2025  às 13:00. | Resposta: {"sent":"true","message":"ok","id":36} | Erro: 
+2025-06-09 16:22:33 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: escova
+Dia: 17/06/2025 às 13:00
+
+Confirmar: http://localhost/site-agendamento/admin/php/responder_agendamento.php?id=39&acao=confirmado
+Recusar: http://localhost/site-agendamento/admin/php/responder_agendamento.php?id=39&acao=recusado | Resposta: {"sent":"true","message":"ok","id":37} | Erro: 
+2025-06-09 16:22:33 | Número inválido: 
+2025-06-09 17:31:51 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 17:31:53 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova foi confirmado para o dia 10/06/2025  às 12:30. | Resposta: {"sent":"true","message":"ok","id":38} | Erro: 
+2025-06-09 17:31:54 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: escova
+Dia: 10/06/2025 às 12:30
+
+Confirmar: http://localhost/site-agendamento/admin/php/responder_agendamento.php?id=40&acao=confirmado
+Recusar: http://localhost/site-agendamento/admin/php/responder_agendamento.php?id=40&acao=recusado | Resposta: {"sent":"true","message":"ok","id":39} | Erro: 
+2025-06-09 17:31:54 | Número inválido: 
+2025-06-09 17:35:28 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 17:35:30 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para botox foi confirmado para o dia 18/06/2025  às 10:00. | Resposta: {"sent":"true","message":"ok","id":40} | Erro: 
+2025-06-09 17:35:31 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: botox
+Dia: 18/06/2025 às 10:00
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=41&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=41&acao=recusado | Resposta: {"sent":"true","message":"ok","id":41} | Erro: 
+2025-06-09 17:35:31 | Número inválido: 
+2025-06-09 18:03:17 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 18:03:17 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte foi confirmado para o dia 10/06/2025  às 15:20. | Resposta: {"error":"Your instance has been Stopped due to non-payment. you can activate this instance by extending your subscription. Payment information updates every 5 minutes."} | Erro: 
+2025-06-09 18:03:18 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 10/06/2025 às 15:20
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=42&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=42&acao=recusado | Resposta: {"error":"Your instance has been Stopped due to non-payment. you can activate this instance by extending your subscription. Payment information updates every 5 minutes."} | Erro: 
+2025-06-09 18:03:18 | Número inválido: 
+2025-06-09 18:06:33 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 18:06:34 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte foi confirmado para o dia 10/06/2025  às 14:00. | Resposta: {"sent":"true","message":"ok","id":42} | Erro: 
+2025-06-09 18:06:36 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 10/06/2025 às 14:00
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=43&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=43&acao=recusado | Resposta: {"sent":"true","message":"ok","id":43} | Erro: 
+2025-06-09 18:06:36 | Número inválido: 
+2025-06-09 18:17:58 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223 | Dono = 
+2025-06-09 18:17:59 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte para o dia 17/06/2025  às 14:40. está esperando confirmação por renata  | Resposta: {"sent":"true","message":"ok","id":46} | Erro: 
+2025-06-09 18:18:01 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 17/06/2025 às 14:40
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=44&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=44&acao=recusado | Resposta: {"sent":"true","message":"ok","id":47} | Erro: 
+2025-06-09 18:21:35 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para botox para o dia 17/06/2025  às 15:00. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":49} | Erro: 
+2025-06-09 18:21:36 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: botox
+Dia: 17/06/2025 às 15:00
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=45&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=45&acao=recusado | Resposta: {"sent":"true","message":"ok","id":50} | Erro: 
+2025-06-09 18:24:42 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223
+2025-06-09 18:24:43 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para progressiva para o dia 21/06/2025  às 09:00. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":52} | Erro: 
+2025-06-09 18:24:45 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: progressiva
+Dia: 21/06/2025 às 09:00
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=46&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=46&acao=recusado | Resposta: {"sent":"true","message":"ok","id":53} | Erro: 
+2025-06-09 18:27:26 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223
+2025-06-09 18:27:27 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova para o dia 21/06/2025  às 11:30. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":54} | Erro: 
+2025-06-09 18:27:29 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: escova
+Dia: 21/06/2025 às 11:30
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=47&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=47&acao=recusado | Resposta: {"sent":"true","message":"ok","id":55} | Erro: 
+2025-06-09 18:28:58 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223
+2025-06-09 18:29:00 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte para o dia 10/06/2025  às 12:40. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":56} | Erro: 
+2025-06-09 18:29:01 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 10/06/2025 às 12:40
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=48&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=48&acao=recusado | Resposta: {"sent":"true","message":"ok","id":57} | Erro: 
+2025-06-09 18:36:59 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581988812636
+2025-06-09 18:37:01 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova para o dia 17/06/2025  às 13:30. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":61} | Erro: 
+2025-06-09 18:37:02 | Enviado para 5581988812636 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: escova
+Dia: 17/06/2025 às 13:30
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=49&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=49&acao=recusado | Resposta: {"sent":"true","message":"ok","id":62} | Erro: 
+2025-06-09 18:44:31 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581988812636
+2025-06-09 18:44:33 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte para o dia 17/06/2025  às 12:40. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":64} | Erro: 
+2025-06-09 18:44:35 | Enviado para 5581988812636 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 17/06/2025 às 12:40
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=50&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=50&acao=recusado | Resposta: {"sent":"true","message":"ok","id":65} | Erro: 
+2025-06-09 20:09:57 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581988812636
+2025-06-09 20:09:59 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte para o dia 10/06/2025  às 12:00. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":67} | Erro: 
+2025-06-09 20:10:00 | Enviado para 5581988812636 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 10/06/2025 às 12:00
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=51&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=51&acao=recusado | Resposta: {"sent":"true","message":"ok","id":68} | Erro: 
+2025-06-09 20:15:09 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223
+2025-06-09 20:15:11 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para escova para o dia 10/06/2025  às 12:30. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":70} | Erro: 
+2025-06-09 20:15:12 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: escova
+Dia: 10/06/2025 às 12:30
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=52&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=52&acao=recusado | Resposta: {"sent":"true","message":"ok","id":71} | Erro: 
+2025-06-09 20:19:08 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223
+2025-06-09 20:19:09 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para progressiva para o dia 24/06/2025  às 12:00. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":73} | Erro: 
+2025-06-09 20:19:11 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: progressiva
+Dia: 24/06/2025 às 12:00
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=53&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=53&acao=recusado | Resposta: {"sent":"true","message":"ok","id":74} | Erro: 
+2025-06-09 21:23:47 | Telefones formatados: Cliente = +5581989094854 | Funcionário = +5581985420223
+2025-06-09 21:23:49 | Enviado para 5581989094854 | Mensagem: Olá Usuario tudo bem? 
+Seu agendamento para corte para o dia 11/06/2025  às 11:20. está esperando confirmação por renata.  | Resposta: {"sent":"true","message":"ok","id":76} | Erro: 
+2025-06-09 21:23:50 | Enviado para 5581985420223 | Mensagem: Você tem um novo agendamento pendente!
+Cliente: Usuario
+Serviço: corte
+Dia: 11/06/2025 às 11:20
+
+Confirmar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=54&acao=confirmado
+Recusar: http://localhost/site-agendamento/funcionario/php/responder_agendamento.php?id=54&acao=recusado | Resposta: {"sent":"true","message":"ok","id":77} | Erro: 

@@ -43,42 +43,77 @@ $prox_mes = (clone $primeiro_dia)->modify('+1 month');
 $prox_mes_url = "?mes={$prox_mes->format('m')}&ano={$prox_mes->format('Y')}&id_servico=$id_servico&id_funcionario=$id_funcionario";
 $anterior_url = "?mes={$mes_anterior->format('m')}&ano={$mes_anterior->format('Y')}&id_servico=$id_servico&id_funcionario=$id_funcionario";
 
-echo "<h2>";
-echo "<a href='$anterior_url' class='seta'>&larr;</a> ";
-echo ucfirst($nome_meses[intval($mes)-1]) . " de $ano";
-echo " <a href='$prox_mes_url' class='seta'>&rarr;</a>";
-echo "</h2>";
+echo "<table class='calendario-tabela'>";
+echo "<thead><tr>";
+foreach ($dias_semana as $nome_dia) {
+    echo "<th>" . ucfirst($nome_dia) . "</th>";
+}
+echo "</tr></thead>";
+echo "<tbody>";
 
-echo "<div class='calendario-grid'>";
 
 $data = clone $primeiro_dia;
 $data->modify('+1 month'); // para o loop funcionar corretamente
 $data_fim = new DateTime("$ano-$mes-{$ultimo_dia->format('d')}");
+$hoje = new DateTime(); // data atual zerada para evitar problemas com horas
+$hoje->setTime(0, 0);
 
-while ($primeiro_dia <= $data_fim) {
-    $nome_dia = $dias_semana[$primeiro_dia->format('w')];
-    $data_formatada = $primeiro_dia->format('d');
-    $nome_dia_uc = ucfirst($nome_dia);
+$hoje = new DateTime();
+$hoje->setTime(0, 0);
 
-    if (isset($dias_abertos[$nome_dia])) {
-        echo "<form method='post' action='horarios.php' class='dia-form'>";
-        echo "<input type='hidden' name='data' value='" . $primeiro_dia->format('Y-m-d') . "'>";
-        echo "<input type='hidden' name='id_servico' value='$id_servico'>";
-        echo "<input type='hidden' name='id_funcionario' value='$id_funcionario'>";
-        echo "<button type='submit' class='dia-botao disponivel'>";
-        echo "<strong>$data_formatada</strong><br><small>$nome_dia_uc</small>";
-        echo "</button>";
-        echo "</form>";
-    } else {
-        echo "<button class='dia-botao fechado' onclick='alert(\"Dia fechado para agendamento\")'>";
-        echo "<strong>$data_formatada</strong><br><small>$nome_dia_uc</small>";
-        echo "</button>";
-    }
+$dia_cursor = clone $primeiro_dia;
+$dia_cursor->modify('first day of this month');
 
-    $primeiro_dia->modify('+1 day');
+// Descobre em que dia da semana começa (0 = domingo)
+$inicio_semana = $dia_cursor->format('w');
+
+echo "<tr>";
+
+// Preenche os dias vazios antes do primeiro dia do mês
+for ($i = 0; $i < $inicio_semana; $i++) {
+    echo "<td></td>";
 }
 
-echo "</div>";
+while ($dia_cursor <= $data_fim) {
+    $nome_dia = strtolower($dias_semana[$dia_cursor->format('w')]);
+
+    // Verifica se precisa abrir nova linha (domingo)
+    if ($dia_cursor->format('w') == 0 && $dia_cursor != $primeiro_dia) {
+        echo "</tr><tr>";
+    }
+
+    $data_formatada = $dia_cursor->format('d');
+
+    // Verifica se o dia é anterior a hoje
+    if ($dia_cursor < $hoje || !isset($dias_abertos[$nome_dia])) {
+        echo "<td><button class='dia-botao fechado' onclick='alert(\"Indisponível\")'>";
+        echo "$data_formatada";
+        echo "</button></td>";
+    } else {
+        echo "<td>";
+        echo "<form method='post' action='horarios.php' class='dia-form'>";
+        echo "<input type='hidden' name='data' value='" . $dia_cursor->format('Y-m-d') . "'>";
+        echo "<input type='hidden' name='id_servico' value='$id_servico'>";
+        echo "<input type='hidden' name='id_funcionario' value='$id_funcionario'>";
+        echo "<button type='submit' class='dia-botao disponivel'>$data_formatada</button>";
+        echo "</form>";
+        echo "</td>";
+    }
+
+    $dia_cursor->modify('+1 day');
+}
+
+// Preenche os dias restantes da última semana com células vazias
+$dia_semana_fim = $dia_cursor->format('w');
+if ($dia_semana_fim > 0) {
+    for ($i = $dia_semana_fim; $i < 7; $i++) {
+        echo "<td></td>";
+    }
+}
+
+echo "</tr>";
+echo "</tbody></table>";
+
 ?>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome -->

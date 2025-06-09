@@ -54,7 +54,7 @@ h2 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 0.1rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,6 +229,38 @@ select {
   background-color: #922B21;
 }
 
+.calendario-tabela {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.calendario-tabela th,
+.calendario-tabela td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+.calendario-tabela {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendario-tabela th,
+.calendario-tabela td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   header {
@@ -270,5 +302,28 @@ select {
 
   .formulario .btn {
     align-self: center;
+  }
+    .calendario-tabela th,
+  .calendario-tabela td {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .dia-botao {
+    font-size: 0.8rem;
+    height: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .calendario-tabela th,
+  .calendario-tabela td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .dia-botao {
+    font-size: 0.9rem;
+    height: 35px;
   }
 }

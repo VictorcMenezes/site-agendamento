@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffaa8f;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Barra de navegação e filtros */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.btn-voltar{
+  background-color: #f35b4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+
+}
+.btn-voltar:hover{
+    background-color: #ef4136;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filtros button {
+ background-color: #f35b4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.filtros button:hover {
+  background-color: #ef4136;
+}
+
+/* Container dos cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card de agendamento */
+.agendamento-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.agendamento-card p {
+  margin: 8px 0;
+}
+
+/* Botões de ação */
+.btn-confirmar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.7rem;
+}
+
+.btn-recusar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.7rem;
+}
+
+.btn-confirmar:hover {
+  background-color: #45a049;
+}
+
+.btn-recusar:hover {
+  background-color: #d32f2f;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  background-color: #ffaa8f;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filtros button {
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,14 +3,21 @@ session_start();
 //conecta com o banco de dados
 $pdo = new PDO("sqlite:../../banco/banco.db");
 
-// Verifica se o usuário está logado
-if (isset($_SESSION['usuario_id'])) {
-    if ($_SESSION['nivel'] === 'admin') {
+function redirecionarPorNivel($nivel) {
+    $nivel = strtolower(trim($nivel));
+    if ($nivel === 'admin') {
         header('Location: ../../admin/admin.php');
+    } elseif ($nivel === 'funcionario') {
+        header('Location: ../../funcionario/index.php');
     } else {
         header('Location: ../../index.php');
     }
     exit();
+}
+
+// Verifica se o usuário está logado
+if (isset($_SESSION['usuario_id'])) {
+    redirecionarPorNivel($_SESSION['nivel']);
 }
 // Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -32,12 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['nome'] = $user['nome'];
             $_SESSION['nivel'] = $user['nivel'];
             
-            if ($_SESSION['nivel'] === 'admin') {
-                header('Location: ../../admin/admin.php');
-            } else {
-                header('Location: ../../index.php');
-            }
-            exit();
+            redirecionarPorNivel($_SESSION['nivel']);
         } else {
              echo "⚠️ Usuário ou senha incorretos!";
     exit;

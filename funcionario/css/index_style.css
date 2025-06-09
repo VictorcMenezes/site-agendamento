@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+header {
+  background-color: #ffaa8f;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Container para centralizar os cards */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-agendamento {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+/* Botões */
+button, .btn {
+  background-color: #f35b4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+  background-color: #ef4136;
+}
+
+/* Responsivo (opcional) */
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar .menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+/* Rodapé */
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  background-color: #ffaa8f;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  button, .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

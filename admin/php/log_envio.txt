@@ -10,3 +10,4 @@
 2025-06-07 17:52:54 | Número inválido: 81985420223
 2025-06-07 17:53:47 | Enviado para 5581985420223 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":9} | Erro: 
 2025-06-07 17:54:21 | Enviado para 5581985420223 | Mensagem: 🚀 Teste de envio via UltraMsg - projeto Victor! | Resposta: {"sent":"true","message":"ok","id":10} | Erro: 
+2025-06-09 14:40:36 | Enviado para 5581989094854 | Mensagem: Olá Usuario, seu agendamento para escova em 10/06/2025 às 13:00 foi confirmado! | Resposta: {"sent":"true","message":"ok","id":35} | Erro: 

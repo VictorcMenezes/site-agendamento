@@ -181,6 +181,26 @@ select {
     font-size: 14px;
     margin-top: 40px;
 }
+.status-pendente {
+    color: #ff9800; /* laranja */
+    font-weight: bold;
+}
+
+.status-confirmado {
+    color: #4caf50; /* verde */
+    font-weight: bold;
+}
+
+.status-recusado {
+    color: #f44336; /* vermelho */
+    font-weight: bold;
+}
+
+.status-desconhecido {
+    color: #757575; /* cinza */
+    font-weight: bold;
+}
+
 
 
 /* Responsividade */

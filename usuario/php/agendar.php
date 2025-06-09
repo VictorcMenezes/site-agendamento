@@ -21,7 +21,7 @@ $id_usuario = $_SESSION['usuario_id'];
 
 // Buscar agendamentos futuros
 $stmt = $pdo->prepare("
-    SELECT a.id, a.data, a.hora, s.nome AS servico, u.nome AS profissional
+    SELECT a.id, a.data, a.hora, a.status, s.nome AS servico, u.nome AS profissional
     FROM agendamentos a
     JOIN servicos s ON a.id_servico = s.id
     JOIN usuarios u ON a.id_funcionario = u.id
@@ -86,6 +86,16 @@ $agendamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <p><strong><?= $data_br ?> às <?= htmlspecialchars($a['hora']) ?></strong></p>
                             <p>Serviço: <?= htmlspecialchars($a['servico']) ?></p>
                             <p>Profissional: <strong><?= htmlspecialchars($a['profissional']) ?></strong></p>
+                            <?php
+                                $status_label = ucfirst($a['status']); // Coloca primeira letra maiúscula
+                                $classe_status = match($a['status']) {
+                                    'pendente' => 'status-pendente',
+                                    'confirmado' => 'status-confirmado',
+                                    'recusado' => 'status-recusado',
+                                    default => 'status-desconhecido'
+                                };
+                            ?>
+<p class="<?= $classe_status ?>"><strong>Status:</strong> <?= $status_label ?></p>
                             <form action="cancelar_agendamento.php" method="post">
                                 <input type="hidden" name="id_agendamento" value="<?= $a['id'] ?>">
                                 <button type="submit" class="btn btn-danger" onclick="return confirm('Cancelar este agendamento?');">
