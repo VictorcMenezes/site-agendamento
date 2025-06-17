@@ -43,13 +43,17 @@ try {
     <link rel="stylesheet" href="../css/listar_agendamentos_style.css">
 </head>
 <body>
+    <main class="main-wrapper">
+        <header>
+            <h1>Lista de Agendamentos</h1>
+        </header>
     <nav>
         <a href="../admin.php">
-            <button>Gerencimento Estabelecimento</button>
+            <button class="btn-voltar">VOLTAR</button>
         </a>
     </nav>
     <div class="container">
-    <h1>Lista de Agendamentos</h1>
+    
      <?php if (empty($agendamentos)): ?>
         <p>Nenhum agendamento futuro encontrado.</p>
     <?php else: ?>
@@ -58,6 +62,7 @@ try {
             <p style="color: green;"><?= $_SESSION['mensagem'] ?></p>
             <?php unset($_SESSION['mensagem']); ?>
         <?php endif; ?>
+        <div class="table-wrapper">
         <table border="1" cellpadding="5">
             <thead>
                 <tr>
@@ -79,7 +84,7 @@ try {
                        <td>
                             <form action="cancelar_cliente_agendamento.php" method="post" onsubmit="return confirm('Cancelar este agendamento?');">
                                 <input type="hidden" name="id_agendamento" value="<?= $ag['id'] ?>">
-                                <button type="submit">Cancelar</button>
+                                <button class="btn-cancelar" type="submit">Cancelar</button>
                             </form>
                         <form action="editar_cliente_agendamento.php" method="get" style="display:inline;">
                             <input type="hidden" name="id_agendamento" value="<?= $ag['id'] ?>">
@@ -91,9 +96,13 @@ try {
                 <?php endforeach; ?>
             </tbody>
         </table>
+        </div>
         
     <?php endif; ?>
     </div>
-
+    <footer class="footer">
+    <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+</footer>
+</main>
 </body>
 </html>

@@ -22,9 +22,13 @@
     <link rel="stylesheet" href="../css/gerenciar_horario_funcionamento_style.css">
 </head>
 <body>
+  <main class="main-wrapper">
+    <header>
+         <h1>Gerenciamento Horarios de Funcionamento</h1>
+    </header>
     <nav>
         <a href="../admin.php">
-            <button>Gerencimento Estabelecimento</button>
+            <button class="btn-voltar">VOLTAR</button>
         </a>
     </nav>
     <?php
@@ -35,7 +39,7 @@
     unset($_SESSION['mensagem']);
     }
     ?>
-    <h1>Gerenciamento Horarios de Funcionamento</h1>
+ 
     <div class="container">
         <div class="cadastro">
             <h2>Cadastra Horario Abertura e Fechamento da semana</h2>
@@ -132,7 +136,9 @@
 
         </div>
     </div>
-
-    
+ <footer class="footer">
+    <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+</footer>
+   </main>   
 </body>
 </html>

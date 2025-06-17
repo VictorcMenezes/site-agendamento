@@ -5,18 +5,31 @@
   box-sizing: border-box;
 }
 
-/* Corpo e HTML */
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+body {
+ font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-/* Corpo com scroll e sem forçar flex */
-body {
-  display: block;
-  padding: 20px; /* Garante espaçamento no topo */
+header {
+  background-color: #93bef8;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
+
 
 /* Container centralizado */
 .container {
@@ -41,7 +54,7 @@ nav button {
   padding: 10px 15px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #4678ad;
   color: white;
   border: none;
   border-radius: 6px;
@@ -53,12 +66,6 @@ h1, h2 {
   margin: 15px 0;
 }
 
-p {
-  margin-bottom: 15px;
-  color: red;
-  font-weight: bold;
-  text-align: center;
-}
 
 /* Formulários */
 form {
@@ -80,23 +87,50 @@ input, select, button {
 }
 
 button {
-  background-color: #28a745;
+  background-color: #4678ad;
   color: white;
   border: none;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #2c6194;
 }
+
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  background-color: #93bef8;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
+  header {
+    font-size: 1.2rem;
+    padding: 10px;
   }
 
-  nav button, button {
+  .nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  button, .btn {
     width: 100%;
+    margin-top: 10px;
   }
 }

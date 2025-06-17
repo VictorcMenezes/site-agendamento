@@ -52,18 +52,20 @@
     <link rel="stylesheet" href="../css/gerenciar_funcionario_style.css">
 </head>
 <body>
-    <div class = "container">
-    <nav>
-        <a href="../admin.php">
-            <button>Gerencimento Estabelecimento</button>
-        </a>
-    </nav>
 
-    <h1>Gerenciamento Funcionario e Função</h1>
+<main class="main-wrapper">    
+        <header>
+            <h1>Gerenciamento Funcionario e Função</h1>
+        </header>
+    <nav class="nav-bar">
+        <a href="../admin.php">
+            <button>VOLTAR</button>
+        </a>
+    </nav>    
      <?php if ($mensagem): ?>
                 <p><?= $mensagem ?></p>
         <?php endif; ?>
-
+    <div class = "container">
     <div class="cadastro">
         <div class="cadastro-funcao">
             <h2>Cadastrar Função</h2>
@@ -99,6 +101,11 @@
             </form> 
         <?php endif; ?>
     </div>
+    
 </div>
+  <footer class="footer">
+    <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+</footer>
+</main>
 </body>
 </html>

@@ -15,12 +15,16 @@ if(!isset($_SESSION['usuario_id']) || $_SESSION['nivel'] !== 'admin'){
     <link rel="stylesheet" href="../css/agendar_cliente_style.css">
 </head>
 <body>
+    <main>
+        <header>
+             <h1>Agendar Serviço Avulso</h1>
+        </header>
     <nav>
     <a href="../admin.php">
         <button>Gerencimento Estabelecimento</button>
     </a>
     </nav>
-    <h1>Agendar Serviço Avulso</h1>
+   
     <div class="container">
     <form method="post" action="buscar_cliente.php">
         <label>Email ou Telefone:</label>
@@ -32,5 +36,7 @@ if(!isset($_SESSION['usuario_id']) || $_SESSION['nivel'] !== 'admin'){
         <p><?= $_SESSION['mensagem']; unset($_SESSION['mensagem']); ?></p>
     <?php endif; ?>
     </div>
+
+  </main>  
 </body>
 </html>

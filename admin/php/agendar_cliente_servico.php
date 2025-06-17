@@ -27,12 +27,16 @@ $servicos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
     <meta charset="UTF-8">
     <title>Agendar Serviço - Escolher Serviço</title>
     <link rel="stylesheet" href="../css/agendar_cliente_style.css">
 </head>
 <body>
+    <main class="main-wrapper">
+    <header>
     <h2>Agendar para: <?= htmlspecialchars($cliente['nome']) . ' ' . htmlspecialchars($cliente['sobrenome']) ?> </h2>
+    </header>
     <div class="container">
         <form method="post" action="agendar_cliente_funcionario.php">
             <label for="servico">Escolha o serviço:</label>
@@ -47,5 +51,6 @@ $servicos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <button type="submit">Continuar</button>
         </form>
     </div>
+    </main>
 </body>
 </html>

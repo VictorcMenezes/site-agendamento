@@ -35,13 +35,18 @@
     <link rel="stylesheet" href="../css/gerenciar_servico_style.css">
 </head>
 <body>
+
+<main class="main-wrapper">
     <div class="container">
+    <header>
+        <h1>Gerenciamento Serviços</h1>
+    </header>
     <nav>
-    <a href="../admin.php">
-        <button>Gerencimento Estabelecimento</button>
+    <a href="../admin.php">    
+        <button>VOLTAR</button>
     </a>
     </nav>
-    <h1>Gerenciamento Serviços</h1>
+    
     
         <div class="cadastro">
             <h2>Cadastrar Serviço</h2>
@@ -100,5 +105,9 @@
         </div>
 
     </div>
+<footer class="footer">
+    <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+</footer>
+    </main>
 </body>
 </html>

@@ -1,73 +1,98 @@
-/* Reset básico para garantir consistência */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-}
-
-/* Container principal */
 body {
-  display: flex;
-  /* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-}
-
-/* Container centralizado */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* ou center se quiser centralizar verticalmente */
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+  line-height: 1.6;
   min-height: 100vh;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
 }
 
-/* Estiliza o nav */
-nav {
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+
+header {
+  background-color: #93bef8;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Container para centralizar os cards */
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
-nav button {
-  padding: 10px 15px;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: #007bff;
+.conteudo{
+  padding-bottom: 2.5rem;
+}
+
+.card-agendamento {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+/* Botões */
+button, .btn {
+  background-color: #4678ad;
   color: white;
   border: none;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
-h1, h2, h3 {
-  text-align: center;
-  margin: 15px 0;
-}
-
-p {
-  margin-bottom: 15px;
-  color: red;
-  font-weight: bold;
-  text-align: center;
+button:hover, .btn:hover {
+  background-color: #2c6194;
 }
 
 /* Formulários */
@@ -90,40 +115,40 @@ input, select, button {
   border: 1px solid #ccc;
 }
 
-button {
-  background-color: #28a745;
+
+.footer {
+  text-align: center;
   color: white;
-  border: none;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #218838;
-}
-
-/* Responsividade (foco em mobile) */
-@media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
-
-  nav button, button {
-    width: 100%;
-  }
-}
-  /* alinha horizontalmente */
-  align-items: center;      /* alinha verticalmente */
-  min-height: 100vh;        /* ocupa altura total da tela */
-  background-color: #f9f9f9;  /* cor de fundo opcional */
-  padding: 20px;            /* espaçamento para não colar nas bordas */
-}
-
-/* Conteúdo centralizado */
-.container {
-  width: 100%;
-  max-width: 500px;         /* limita o tamanho no desktop */
-  background-color: white;  /* cor de fundo do conteúdo */
-  padding: 20px;
+  padding: 20px 0;
+  background-color: #93bef8;
+  font-size: 14px;
+  margin-top: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  button, .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
 }

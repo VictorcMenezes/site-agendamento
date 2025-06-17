@@ -5,36 +5,54 @@
   box-sizing: border-box;
 }
 
-/* Corpo e HTML */
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden; /* evita rolagem horizontal */
 }
 
-/* Corpo com scroll e sem forçar flex */
-body {
-  display: block;
-  padding: 20px; /* Garante espaçamento no topo */
+.main-wrapper {
+    width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  min-height: 100vh;
+  flex-grow: 1;
+  overflow-x: hidden; /* evita corte horizontal */
 }
+
+/* Header */
+ header {
+  background-color: #93bef8;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
 
 /* Container centralizado */
 .container {
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
+   width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Nav e botão */
+/* Navegação e botão */
 nav {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 nav button {
@@ -45,6 +63,11 @@ nav button {
   color: white;
   border: none;
   border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #0056b3;
 }
 
 /* Títulos e mensagens */
@@ -77,6 +100,7 @@ input, select, button {
   font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #ccc;
+  width: 100%;
 }
 
 button {
@@ -90,13 +114,37 @@ button:hover {
   background-color: #218838;
 }
 
+/* Footer */
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  background-color: #93bef8;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
+  .main-wrapper {
+    padding: 10px;
+  }
+
   .container {
     padding: 15px;
   }
 
-  nav button, button {
+  header {
+    padding: 10px;
+  }
+
+  button, .btn {
     width: 100%;
+    margin-top: 10px;
+  }
+
+  form {
+    gap: 8px;
   }
 }

@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="./css/admin_style.css">
 </head>
 <body>
-    <nav>
+    <main class="main-wrapper">
+        <header>
+            <h1>Bem-vindo, <?= $_SESSION['nome'] ?>!</h1>
+        </header>
+    <nav class="nav-bar">
         <?php if(isset($_SESSION['nome'])): ?>
-
-        <p>Olá, <?php echo $_SESSION['nome']; ?></p>
-
         <a href="../login-register/php/logout.php" onclick="return confirm('Tem certeza que deseja sair?');">
             <button class="btn"><i class="fas fa-sign-out-alt"></i> Sair</button>
         </a>
@@ -45,6 +46,13 @@
             <button>Agendar Serviço Avulso</button>
         </a>
     </nav>
+    <div class="conteudo">
     <h1>Gerencimento Estabelecimento</h1>
+    </div>
+      <footer class="footer">
+    <p>Desenvolvido por <strong>Victor Menezes</strong> &copy; <?= date("Y") ?></p>
+</footer>
+    </main>
+   
 </body>
 </html>
